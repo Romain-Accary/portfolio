@@ -1,0 +1,142 @@
+/* 1. Use a more-intuitive box-sizing model */
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+/* 2. Remove default margin */
+* {
+    margin: 0;
+}
+
+body {
+    /* 3. Add accessible line-height */
+    line-height: 1.5;
+    /* 4. Improve text rendering */
+    -webkit-font-smoothing: antialiased;
+}
+
+/* 5. Improve media defaults */
+img,
+picture,
+video,
+canvas,
+svg {
+    display: block;
+    max-width: 100%;
+}
+
+/* 6. Inherit fonts for form controls */
+input,
+button,
+textarea,
+select {
+    font: inherit;
+}
+
+/* 7. Avoid text overflows */
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    overflow-wrap: break-word;
+}
+
+/* 8. Improve line wrapping */
+p {
+    text-wrap: pretty;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    text-wrap: balance;
+}
+
+/*
+    9. Create a root stacking context
+  */
+#root,
+#__next {
+    isolation: isolate;
+}
+
+.header {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    min-width: 100vh;
+}
+
+
+.menu {
+    display: flex;
+    font-size: 2rem;
+    gap: 30px;
+    justify-content: flex-end;
+    margin-top: 0;
+
+}
+
+.button_menu {
+    text-decoration: none; 
+    cursor: pointer; 
+    font-size: 2rem; 
+    font-weight: bold; 
+    background: linear-gradient(to right top, #f8abeb, #dea5ec, #c29fec, #a29ae9, #7f95e4);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    transition: transform 0.3s ease, color 0.3s ease; 
+}
+
+.button_menu:hover {
+    transform: scale(1.1);
+    filter: brightness(1.2);
+}
+
+.logo_nav{
+    color: #c29fec;
+    margin-right: 10px;
+}
+
+
+.logo {
+    height: 250px;
+    width: 250px;
+    margin-left: 0;
+}
+
+.contact {
+    margin-right: 10px;
+    display: flex;
+    gap: 30px;
+}
+
+.fa-linkedin {
+    width: 50px;
+    height: 50px;
+}
+
+.fa-github {
+    width: 50px;
+    height: 50px;
+}
+
+.logo_contact{
+    cursor: pointer;
+    color: #c29fec;
+    transition: transform 0.3s ease, color 0.3s ease;
+}
+
+.logo_contact:hover{
+    transform: scale(1.1);
+    filter: brightness(1.2);
+}
