@@ -68,12 +68,21 @@ h6 {
     isolation: isolate;
 }
 
-.header {
+*{
+    font-family: "Tinos", serif;
+}
+
+.header{
+    min-width: 100vh;
+    height: 400px;
+    background-image: url(../assets/footer.jpeg);
+}
+
+.navigation {
     display: flex;
     flex-direction: row;
     align-items: center;
     justify-content: space-between;
-    min-width: 100vh;
 }
 
 
@@ -83,17 +92,14 @@ h6 {
     gap: 30px;
     justify-content: flex-end;
     margin-top: 0;
-
 }
 
 .button_menu {
     text-decoration: none; 
     cursor: pointer; 
     font-size: 2rem; 
-    font-weight: bold; 
-    background: linear-gradient(to right top, #f8abeb, #dea5ec, #c29fec, #a29ae9, #7f95e4);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
+    font-weight: lighter; 
+    color: whitesmoke;
     transition: transform 0.3s ease, color 0.3s ease; 
 }
 
@@ -103,7 +109,7 @@ h6 {
 }
 
 .logo_nav{
-    color: #c29fec;
+    color: whitesmoke;
     margin-right: 10px;
 }
 
@@ -132,11 +138,31 @@ h6 {
 
 .logo_contact{
     cursor: pointer;
-    color: #c29fec;
+    color: whitesmoke;
     transition: transform 0.3s ease, color 0.3s ease;
 }
 
 .logo_contact:hover{
     transform: scale(1.1);
     filter: brightness(1.2);
+}
+
+
+.title-header{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+h1{
+    font-size: 1.7rem ;
+    font-weight: lighter; 
+    color: whitesmoke;
+}
+
+p{
+    font-size: 2rem;
+    font-weight: bold; 
+    color: whitesmoke;
 }
