@@ -16,8 +16,8 @@ export function Header() {
                     <a className='button_menu' href="../pages/Home"><FontAwesomeIcon className='logo_nav' icon={faAddressBook} />Contact</a>
                 </nav>
                 <nav className='contact'>
-                    <a className='logo_contact' href="https://www.linkedin.com/in/romain-accary-b00b6833a/"><FontAwesomeIcon icon={faLinkedin} /></a>
-                    <a className='logo_contact' href="https://github.com/Romain-Accary"><FontAwesomeIcon icon={faGithub} /></a>
+                    <a className='logo_contact' target='blank' href="https://www.linkedin.com/in/romain-accary-b00b6833a/"><FontAwesomeIcon icon={faLinkedin} /></a>
+                    <a className='logo_contact' target='blank' href="https://github.com/Romain-Accary"><FontAwesomeIcon icon={faGithub} /></a>
                 </nav>
             </div>
             <div className="title-header">
